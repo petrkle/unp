@@ -31,12 +31,12 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-mkdir -p $PKG/usr/local/bin
-cat unp > $PKG/usr/local/bin/unp
-chmod oug+x $PKG/usr/local/bin/unp
+mkdir -p $PKG/usr/bin
+cat unp > $PKG/usr/bin/unp
+chmod oug+x $PKG/usr/bin/unp
 
-mkdir -p $PKG/usr/local/man/man1
-cat debian/unp.1 > $PKG/usr/local/man/man1/unp.1
+mkdir -p $PKG/usr/man/man1
+cat debian/unp.1 > $PKG/usr/man/man1/unp.1
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
