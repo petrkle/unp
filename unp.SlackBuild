@@ -2,7 +2,7 @@
 
 # Slackware build script for unp
 
-# Petr Kletecka petr@kle.cz <2015>
+# Petr Kletecka petr@kle.cz <2017>
 
 PRGNAM=unp
 VERSION=${VERSION:-2.0~pre7+nmu1}
